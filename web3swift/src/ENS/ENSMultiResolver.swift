@@ -94,7 +94,7 @@ extension EthereumNameService {
         ) {
             self.client = client
             self.registryAddress = registryAddress
-            self.multicall = Multicall(client: client)
+            self.multicall = Multicall(client: client, registryAddress: registryAddress)
         }
 
         func resolve(
